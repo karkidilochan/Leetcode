@@ -62,7 +62,9 @@ Below is a structured table with problem links and notes. I will update this rep
 ### **🔹 Graphs**
 | # | Problem | URL | Notes |
 |---|---------|-----|-------|
-| 1 | Example Problem | [🔗 Link](https://leetcode.com/problems/example) | Example note |
+| 1 | Island Perimeter | [🔗 Link](https://leetcode.com/problems/island-perimeter/) | For each element, look in all four directions, and increase perimeter count if reached at the grid edge, or grid block with "0", keep track of visited blocks and avoid them |
+| 1 | Number of Islands | [🔗 Link](https://leetcode.com/problems/number-of-islands/) | For each element, look in all four directions, and do bfs/dfs if element is "1" and has not been visited.|
+
 
 ### **🔹 Backtracking**
 | # | Problem | URL | Notes |
