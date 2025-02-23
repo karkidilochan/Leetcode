@@ -42,7 +42,7 @@ Below is a structured table with problem links and notes. I will update this rep
 ### **🔹 Sliding Window**
 | # | Problem | URL | Notes |
 |---|---------|-----|-------|
-| 1 | Example Problem | [🔗 Link](https://leetcode.com/problems/example) | Example note |
+| 1 | Longest Repeating Character Replacement | [🔗 Link](https://leetcode.com/problems/longest-repeating-character-replacement/) | Sliding window: left pointer moves right when difference of max_freq so far and current window length exceeds allowed replacements |
 
 ### **🔹 Linked List**
 | # | Problem | URL | Notes |
