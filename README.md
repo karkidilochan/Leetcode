@@ -49,7 +49,7 @@ Below is a structured table with problem links and notes. I will update this rep
 ### **🔗 Linked List**  
 | # | Problem | Notes |
 |---|---------|-------|
-| 1 | [Example Problem](https://leetcode.com/problems/example) | Example note |
+| 1 | [Copy Linked List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | copy linked list with recursion, create new node before recursive call, use recursive call to assign the copy, and assign random pointer after the recursive call, use hashmap as index old -> new |
 
 ### **🌳 Trees**  
 | # | Problem | Notes |
