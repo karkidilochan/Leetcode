@@ -68,7 +68,8 @@ Below is a structured table with problem links and notes. I will update this rep
 | 1 | [Island Perimeter](https://leetcode.com/problems/island-perimeter/) | For each element, look in all four directions, and increase perimeter count if reached at the grid edge, or grid block with "0", keep track of visited blocks and avoid them |
 | 2 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | For each element, look in all four directions, and do bfs/dfs if element is "1" and has not been visited.|
 | 3 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | bfs/dfs to each node, keep track of new clones with hashmap, and append clones of neighbors to the clone of current node |
-| 4 | [Islands & Treasure]() | use bfs, add neighboring lands to queue, loop through the queue at each level and accumulate steps when moving to next level, return the steps count when 0(treasure) is found. |
+| 4 | [Islands & Treasure](https://leetcode.com/problems/walls-and-gates/description/) | use bfs, add neighboring lands to queue, loop through the queue at each level and accumulate steps when moving to next level, return the steps count when 0(treasure) is found. |
+| 5| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | go through the grid to find all rotten, then run bfs to find fresh ones, update count of fresh ones at the end of run |
 
 ### **🌀 Backtracking**  
 | # | Problem | Notes |
