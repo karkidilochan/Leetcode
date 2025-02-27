@@ -24,7 +24,7 @@ Below is a structured table with problem links and notes. I will update this rep
 ### **🗂️ Arrays and Hashing**  
 | # | Problem | Notes |
 |---|---------|-------|
-| 1 | [Example Problem](https://leetcode.com/problems/example) | Example note |
+| 1 | [Encode Decode](https://leetcode.com/problems/encode-and-decode-strings/description/) | encode: append a separator with string size, decode: loop until separator, get the size and get the string |
 
 ### **🎯 Two Pointers**  
 | # | Problem | Notes |
