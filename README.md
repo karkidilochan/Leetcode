@@ -25,6 +25,7 @@ Below is a structured table with problem links and notes. I will update this rep
 | # | Problem | Notes |
 |---|---------|-------|
 | 1 | [Encode Decode](https://leetcode.com/problems/encode-and-decode-strings/description/) | encode: append a separator with string size, decode: loop until separator, get the size and get the string |
+| 2 | [Longest Consecutive Sequence] (https://leetcode.com/problems/longest-consecutive-sequence/description/) | find the start of a sequence i.e. num-1 does not exist in hashmap, then loop until its consecutive is not in hashmap | 
 
 ### **🎯 Two Pointers**  
 | # | Problem | Notes |
