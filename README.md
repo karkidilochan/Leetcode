@@ -30,7 +30,7 @@ Below is a structured table with problem links and notes. I will update this rep
 ### **🎯 Two Pointers**  
 | # | Problem | Notes |
 |---|---------|-------|
-| 1 | [Example Problem](https://leetcode.com/problems/example) | Example note |
+| 1 | [Search in Rotated Array](https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/1562036908/) | Find the sorted half (if mid > end, left half is sorted), then look if target is in the sorted half, and adjust midpoint accordingly |
 
 ### **📚 Stack**  
 | # | Problem | Notes |
