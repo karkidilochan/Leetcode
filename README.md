@@ -51,6 +51,7 @@ Below is a structured table with problem links and notes. I will update this rep
 | # | Problem | Notes |
 |---|---------|-------|
 | 1 | [Copy Linked List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | copy linked list with recursion, create new node before recursive call, use recursive call to assign the copy, and assign random pointer after the recursive call, use hashmap as index old -> new |
+| 2 | [Add Two Numbers] (https://leetcode.com/problems/add-two-numbers/) | iterate through the lists until both of them are none and carry over is 0, add modulus 10 of sum to the new node |
 
 ### **🌳 Trees**  
 | # | Problem | Notes |
