@@ -30,12 +30,13 @@ Below is a structured table with problem links and notes. I will update this rep
 ### **🎯 Two Pointers**  
 | # | Problem | Notes |
 |---|---------|-------|
-| 1 | [Search in Rotated Array](https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/1562036908/) | Find the sorted half (if mid > end, left half is sorted), then look if target is in the sorted half, and adjust midpoint accordingly |
+
 
 ### **📚 Stack**  
 | # | Problem | Notes |
 |---|---------|-------|
-| 1 | [Example Problem](https://leetcode.com/problems/example) | Example note |
+| 1 | [Search in Rotated Array](https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/1562036908/) | Find the sorted half (if mid > end, left half is sorted), then look if target is in the sorted half, and adjust midpoint accordingly |
+| 2 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Store every timestamp<=given timestamp, move the right window shorter if the midpoint timestamp > given timestamp |
 
 ### **🔍 Binary Search**  
 | # | Problem | Notes |
