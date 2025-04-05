@@ -80,3 +80,9 @@ Below is a structured table with problem links and notes. I will update this rep
 | # | Problem | Notes |
 |---|---------|-------|
 | 1 | [Example Problem](https://leetcode.com/problems/example) | Example note |
+
+### **🌀 Dynamic Programming**  
+| # | Problem | Notes |
+|---|---------|-------|
+| 1 | [Fibonacci Sequence](https://leetcode.com/problems/fibonacci-number/description/) | Memoization(top-down): store value of n in precomputed dict, Tabulation(bottom-up): compute from 2 to n |
+
