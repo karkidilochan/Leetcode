@@ -75,6 +75,7 @@ Below is a structured table with problem links and notes. I will update this rep
 | 4 | [Islands & Treasure](https://leetcode.com/problems/walls-and-gates/description/) | use bfs, add neighboring lands to queue, loop through the queue at each level and accumulate steps when moving to next level, return the steps count when 0(treasure) is found. |
 | 5| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | go through the grid to find all rotten, then run bfs to find fresh ones, update count of fresh ones at the end of run |
 | 6| [Pacific and Atlantic Ocean](https://leetcode.com/problems/pacific-atlantic-water-flow/) | start from the edges of grid, keep separate sets of visited nodes in pacific and atlantic |
+| 7| [Flood Fill](https://leetcode.com/problems/flood-fill/description/) | bfs/dfs the graph, check for original color after popping queue, since node in queue may be already changed |
 
 ### **🌀 Backtracking**  
 | # | Problem | Notes |
