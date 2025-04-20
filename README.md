@@ -41,7 +41,7 @@ Below is a structured table with problem links and notes. I will update this rep
 ### **🔍 Binary Search**  
 | # | Problem | Notes |
 |---|---------|-------|
-| 1 | [Example Problem](https://leetcode.com/problems/example) | Example note |
+| 1 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | check left for isbadversion, return left after binary search ends |
 
 ### **🚀 Sliding Window**  
 | # | Problem | Notes |
