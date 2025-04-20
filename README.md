@@ -54,6 +54,7 @@ Below is a structured table with problem links and notes. I will update this rep
 | 1 | [Copy Linked List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | copy linked list with recursion, create new node before recursive call, use recursive call to assign the copy, and assign random pointer after the recursive call, use hashmap as index old -> new |
 | 2 | [Add Two Numbers] (https://leetcode.com/problems/add-two-numbers/) | iterate through the lists until both of them are none and carry over is 0, add modulus 10 of sum to the new node |
 | 3| [Find Duplicate] (https://leetcode.com/problems/find-the-duplicate-number/) | treat list as linked list, duplicate number will create a cycle, detect cycle, then find the cycle starting point by resetting on pointer to head, you can use bit set |
+|4| [Middle of Linked List] (https://leetcode.com/problems/middle-of-the-linked-list/description/) | slow and fast pointer|
 
 ### **🌳 Trees**  
 | # | Problem | Notes |
