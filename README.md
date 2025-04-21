@@ -26,6 +26,8 @@ Below is a structured table with problem links and notes. I will update this rep
 |---|---------|-------|
 | 1 | [Encode Decode](https://leetcode.com/problems/encode-and-decode-strings/description/) | encode: append a separator with string size, decode: loop until separator, get the size and get the string |
 | 2 | [Longest Consecutive Sequence] (https://leetcode.com/problems/longest-consecutive-sequence/description/) | find the start of a sequence i.e. num-1 does not exist in hashmap, then loop until its consecutive is not in hashmap | 
+| 3 | [Insert Interval] (https://leetcode.com/problems/insert-interval/) | linear search: find insertion point, fix ranges with min(start) and max(end), binary search: find insertion point, append to result array while fixing the range with max(end) |
+| 4 | [Product of Array Except Self] (https://leetcode.com/problems/product-of-array-except-self/) | optimized approach: two passes, first pass find prefix product shifted to right by one, suffix product shifted to right by one | 
 
 ### **🎯 Two Pointers**  
 | # | Problem | Notes |
@@ -88,4 +90,5 @@ Below is a structured table with problem links and notes. I will update this rep
 |---|---------|-------|
 | 1 | [Fibonacci Sequence](https://leetcode.com/problems/fibonacci-number/description/) | Memoization(top-down): store value of n in precomputed dict, Tabulation(bottom-up): compute from 2 to n |
 | 2 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | Think of each step of stairs as a node in a tree, taking 1 or 2 step as branches of that node, use DFS to traverse tree, return 0 if current path exceeds target value. |
+| 3 | [Min Cost Climbing Stairs] (https://leetcode.com/problems/min-cost-climbing-stairs/) | recursion: if current step exceeds length, return 0, memoize it for dp, for bottom up, create an array that stores min of the result of i-1 and i-2, added the cost for those previous steps  |
 
