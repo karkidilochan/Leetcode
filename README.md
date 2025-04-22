@@ -79,13 +79,19 @@ Below is a structured table with problem links and notes. I will update this rep
 | 5| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | go through the grid to find all rotten, then run bfs to find fresh ones, update count of fresh ones at the end of run |
 | 6| [Pacific and Atlantic Ocean](https://leetcode.com/problems/pacific-atlantic-water-flow/) | start from the edges of grid, keep separate sets of visited nodes in pacific and atlantic |
 | 7| [Flood Fill](https://leetcode.com/problems/flood-fill/description/) | bfs/dfs the graph, check for original color after popping queue, since node in queue may be already changed |
+| 8 | [01-Matrix] (https://leetcode.com/problems/01-matrix/) | bfs: start from 0-cell append them to queue, after traversing the matrix, start processing the queue, traverse new cells if their results cell hasn't been computed yet, DP approach: do a two pass from top-left, and then bottom-right |
 
 ### **🌀 Backtracking**  
 | # | Problem | Notes |
 |---|---------|-------|
 | 1 | [Example Problem](https://leetcode.com/problems/example) | Example note |
 
-### **🌀 Dynamic Programming**  
+### ** Bit Manipulation**  
+| # | Problem | Notes |
+|---|---------|-------|
+| 1 | [Single Number](https://leetcode.com/problems/single-number/description/) | Use XOR, its associative and commutative, a^a = 0, a^0 =a |
+
+### **Dynamic Programming**  
 | # | Problem | Notes |
 |---|---------|-------|
 | 1 | [Fibonacci Sequence](https://leetcode.com/problems/fibonacci-number/description/) | Memoization(top-down): store value of n in precomputed dict, Tabulation(bottom-up): compute from 2 to n |
