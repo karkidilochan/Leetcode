@@ -63,6 +63,7 @@ Below is a structured table with problem links and notes. I will update this rep
 |---|---------|-------|
 | 1 | [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | bfs, for each node, add its children and current level + 1 to the queue,
  and use hashmap to keep track of node values at each level |
+| 2 | [Right Side View] (https://leetcode.com/problems/binary-tree-right-side-view/) | DFS: if dfs right child first starting with level 0, at each level append to result the first node visited -> len(result) == depth, BFS: loop through the queue at each level, the last element is the rightmost |
 
 ### **⚡ Heaps / Priority Queue**  
 | # | Problem | Notes |
@@ -97,4 +98,5 @@ Below is a structured table with problem links and notes. I will update this rep
 | 1 | [Fibonacci Sequence](https://leetcode.com/problems/fibonacci-number/description/) | Memoization(top-down): store value of n in precomputed dict, Tabulation(bottom-up): compute from 2 to n |
 | 2 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | Think of each step of stairs as a node in a tree, taking 1 or 2 step as branches of that node, use DFS to traverse tree, return 0 if current path exceeds target value. |
 | 3 | [Min Cost Climbing Stairs] (https://leetcode.com/problems/min-cost-climbing-stairs/) | recursion: if current step exceeds length, return 0, memoize it for dp, for bottom up, create an array that stores min of the result of i-1 and i-2, added the cost for those previous steps  |
+| 4 | [House Robber] (https://leetcode.com/problems/house-robber) | subproblem: find max of each subarray for an element of the array, keep prev_1 or keep prev_2 and add self to avoid adjacent values |
 
