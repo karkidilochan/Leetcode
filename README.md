@@ -25,9 +25,9 @@ Below is a structured table with problem links and notes. I will update this rep
 | # | Problem | Notes |
 |---|---------|-------|
 | 1 | [Encode Decode](https://leetcode.com/problems/encode-and-decode-strings/description/) | encode: append a separator with string size, decode: loop until separator, get the size and get the string |
-| 2 | [Longest Consecutive Sequence] (https://leetcode.com/problems/longest-consecutive-sequence/description/) | find the start of a sequence i.e. num-1 does not exist in hashmap, then loop until its consecutive is not in hashmap | 
-| 3 | [Insert Interval] (https://leetcode.com/problems/insert-interval/) | linear search: find insertion point, fix ranges with min(start) and max(end), binary search: find insertion point, append to result array while fixing the range with max(end) |
-| 4 | [Product of Array Except Self] (https://leetcode.com/problems/product-of-array-except-self/) | optimized approach: two passes, first pass find prefix product shifted to right by one, suffix product shifted to right by one | 
+| 2 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) | find the start of a sequence i.e. num-1 does not exist in hashmap, then loop until its consecutive is not in hashmap | 
+| 3 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | linear search: find insertion point, fix ranges with min(start) and max(end), binary search: find insertion point, append to result array while fixing the range with max(end) |
+| 4 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | optimized approach: two passes, first pass find prefix product shifted to right by one, suffix product shifted to right by one | 
 
 ### **🎯 Two Pointers**  
 | # | Problem | Notes |
@@ -49,21 +49,24 @@ Below is a structured table with problem links and notes. I will update this rep
 | # | Problem | Notes |
 |---|---------|-------|
 | 1 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Sliding window: left pointer moves right when difference of max_freq so far and current window length exceeds allowed replacements |
+| 2 | [String permutation](https://leetcode.com/problems/surrounded-regions/description/) | keep a running counter for longer array, if len exceeds required length of smaller array, decrease/remove the leftmost element |
+
 
 ### **🔗 Linked List**  
 | # | Problem | Notes |
 |---|---------|-------|
 | 1 | [Copy Linked List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | copy linked list with recursion, create new node before recursive call, use recursive call to assign the copy, and assign random pointer after the recursive call, use hashmap as index old -> new |
-| 2 | [Add Two Numbers] (https://leetcode.com/problems/add-two-numbers/) | iterate through the lists until both of them are none and carry over is 0, add modulus 10 of sum to the new node |
-| 3 | [Find Duplicate] (https://leetcode.com/problems/find-the-duplicate-number/) | treat list as linked list, duplicate number will create a cycle, detect cycle, then find the cycle starting point by resetting on pointer to head, you can use bit set |
-|4 | [Middle of Linked List] (https://leetcode.com/problems/middle-of-the-linked-list/description/) | slow and fast pointer|
+| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | iterate through the lists until both of them are none and carry over is 0, add modulus 10 of sum to the new node |
+| 3 | [Find Duplicate](https://leetcode.com/problems/find-the-duplicate-number/) | treat list as linked list, duplicate number will create a cycle, detect cycle, then find the cycle starting point by resetting on pointer to head, you can use bit set |
+|4 | [Middle of Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/) | slow and fast pointer|
 
 ### **🌳 Trees**  
 | # | Problem | Notes |
 |---|---------|-------|
 | 1 | [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | bfs, for each node, add its children and current level + 1 to the queue,
  and use hashmap to keep track of node values at each level |
-| 2 | [Right Side View] (https://leetcode.com/problems/binary-tree-right-side-view/) | DFS: if dfs right child first starting with level 0, at each level append to result the first node visited -> len(result) == depth, BFS: loop through the queue at each level, the last element is the rightmost |
+| 2 | [Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | DFS: if dfs right child first starting with level 0, at each level append to result the first node visited -> len(result) == depth, BFS: loop through the queue at each level, the last element is the rightmost |
+| 3 | [Good Nodes](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/) | keep track of max in dfs and count when max is updated, start with the root value |
 
 ### **⚡ Heaps / Priority Queue**  
 | # | Problem | Notes |
@@ -80,7 +83,8 @@ Below is a structured table with problem links and notes. I will update this rep
 | 5| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | go through the grid to find all rotten, then run bfs to find fresh ones, update count of fresh ones at the end of run |
 | 6| [Pacific and Atlantic Ocean](https://leetcode.com/problems/pacific-atlantic-water-flow/) | start from the edges of grid, keep separate sets of visited nodes in pacific and atlantic |
 | 7| [Flood Fill](https://leetcode.com/problems/flood-fill/description/) | bfs/dfs the graph, check for original color after popping queue, since node in queue may be already changed |
-| 8 | [01-Matrix] (https://leetcode.com/problems/01-matrix/) | bfs: start from 0-cell append them to queue, after traversing the matrix, start processing the queue, traverse new cells if their results cell hasn't been computed yet, DP approach: do a two pass from top-left, and then bottom-right |
+| 8 | [01-Matrix](https://leetcode.com/problems/01-matrix/) | bfs: start from 0-cell append them to queue, after traversing the matrix, start processing the queue, traverse new cells if their results cell hasn't been computed yet, DP approach: do a two pass from top-left, and then bottom-right |
+| 9 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | we are excluding edges from modification, so start search from edges, and populate with something else then another loop to capture the rest, turn populated ones to the original value |
 
 ### **🌀 Backtracking**  
 | # | Problem | Notes |
@@ -97,6 +101,7 @@ Below is a structured table with problem links and notes. I will update this rep
 |---|---------|-------|
 | 1 | [Fibonacci Sequence](https://leetcode.com/problems/fibonacci-number/description/) | Memoization(top-down): store value of n in precomputed dict, Tabulation(bottom-up): compute from 2 to n |
 | 2 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | Think of each step of stairs as a node in a tree, taking 1 or 2 step as branches of that node, use DFS to traverse tree, return 0 if current path exceeds target value. |
-| 3 | [Min Cost Climbing Stairs] (https://leetcode.com/problems/min-cost-climbing-stairs/) | recursion: if current step exceeds length, return 0, memoize it for dp, for bottom up, create an array that stores min of the result of i-1 and i-2, added the cost for those previous steps  |
-| 4 | [House Robber] (https://leetcode.com/problems/house-robber) | subproblem: find max of each subarray for an element of the array, keep prev_1 or keep prev_2 and add self to avoid adjacent values |
+| 3 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | recursion: if current step exceeds length, return 0, memoize it for dp, for bottom up, create an array that stores min of the result of i-1 and i-2, added the cost for those previous steps  |
+| 4 | [House Robber](https://leetcode.com/problems/house-robber) | subproblem: find max of each subarray for an element of the array, keep prev_1 or keep prev_2 and add self to avoid adjacent values |
+| 5 | [House Robber 2](https://leetcode.com/problems/house-robber-ii/description/) | run dp for two instances: 1. if first element taken, slice out last element, 2. if second element taken iterate until last element |
 
