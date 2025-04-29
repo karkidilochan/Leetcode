@@ -106,4 +106,5 @@ Below is a structured table with problem links and notes. I will update this rep
 | 3 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | recursion: if current step exceeds length, return 0, memoize it for dp, for bottom up, create an array that stores min of the result of i-1 and i-2, added the cost for those previous steps  |
 | 4 | [House Robber](https://leetcode.com/problems/house-robber) | subproblem: find max of each subarray for an element of the array, keep prev_1 or keep prev_2 and add self to avoid adjacent values |
 | 5 | [House Robber 2](https://leetcode.com/problems/house-robber-ii/description/) | run dp for two instances: 1. if first element taken, slice out last element, 2. if second element taken iterate until last element |
+| 6 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | 2P: two pointers: treat each character as a center and expand outwards, with odd and even approaches ,  DP O(n^2) time and O(n^2) space: start from the end, keep 2d array updated for left,right, update result if palindrome and >max |
 
