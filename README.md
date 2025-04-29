@@ -68,6 +68,7 @@ Below is a structured table with problem links and notes. I will update this rep
 | 2 | [Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | DFS: if dfs right child first starting with level 0, at each level append to result the first node visited -> len(result) == depth, BFS: loop through the queue at each level, the last element is the rightmost |
 | 3 | [Good Nodes](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/) | keep track of max in dfs and count when max is updated, start with the root value |
 | 4 | [Validate BST](https://leetcode.com/problems/validate-binary-search-tree/) | validate each node, and the subtree as well, so set a range for each dfs call, right -> node.val is min, left -> node.val is max |
+| 5 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | inorder traversal of bst gives sorted elements, can keep a decreasing counter after left dfs for more efficient solution |
 
 ### **⚡ Heaps / Priority Queue**  
 | # | Problem | Notes |
