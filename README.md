@@ -91,7 +91,7 @@ Below is a structured table with problem links and notes. I will update this rep
 ### **🌀 Backtracking**  
 | # | Problem | Notes |
 |---|---------|-------|
-| 1 | [Example Problem](https://leetcode.com/problems/example) | Example note |
+| 1 | [Subsets](https://leetcode.com/problems/subsets) | for each element, either include it in subset or not, gives series of actions for 2^n subsets for n elements; backtracking: popping recently added element |
 
 ### ** Bit Manipulation**  
 | # | Problem | Notes |
