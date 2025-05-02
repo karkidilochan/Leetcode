@@ -92,6 +92,7 @@ Below is a structured table with problem links and notes. I will update this rep
 | # | Problem | Notes |
 |---|---------|-------|
 | 1 | [Subsets](https://leetcode.com/problems/subsets) | for each element, either include it in subset or not, gives series of actions for 2^n subsets for n elements; backtracking: popping recently added element |
+| 2 | [Combination Sum](https://leetcode.com/problems/combination-sum/description/) | build a decision tree out of the possible actions at each element, each action can be a recursion to i+1 element with append and after pop |
 
 ### ** Bit Manipulation**  
 | # | Problem | Notes |
@@ -107,4 +108,4 @@ Below is a structured table with problem links and notes. I will update this rep
 | 4 | [House Robber](https://leetcode.com/problems/house-robber) | subproblem: find max of each subarray for an element of the array, keep prev_1 or keep prev_2 and add self to avoid adjacent values |
 | 5 | [House Robber 2](https://leetcode.com/problems/house-robber-ii/description/) | run dp for two instances: 1. if first element taken, slice out last element, 2. if second element taken iterate until last element |
 | 6 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | 2P: two pointers: treat each character as a center and expand outwards, with odd and even approaches ,  DP O(n^2) time and O(n^2) space: start from the end, keep 2d array updated for left,right, update result if palindrome and >max |
-
+| 7 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/) | Dynamic Programming: O(n^2) => substring is palindrome if substring i+1, j-1 is palindrome, Iterative 2P: O(n^2) => expand around center to count odd and even length palindromes | 
