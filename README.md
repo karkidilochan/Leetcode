@@ -69,6 +69,8 @@ Below is a structured table with problem links and notes. I will update this rep
 | 3 | [Good Nodes](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/) | keep track of max in dfs and count when max is updated, start with the root value |
 | 4 | [Validate BST](https://leetcode.com/problems/validate-binary-search-tree/) | validate each node, and the subtree as well, so set a range for each dfs call, right -> node.val is min, left -> node.val is max |
 | 5 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | inorder traversal of bst gives sorted elements, can keep a decreasing counter after left dfs for more efficient solution |
+| 6 | [Binary Tree from in-order and pre-order traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | for each node in preorder, split the inorder into two halves and recurse, use hashmap to store inorder indexes, use left and right pointers for slices of splits | 
+
 
 ### **⚡ Heaps / Priority Queue**  
 | # | Problem | Notes |
@@ -108,4 +110,6 @@ Below is a structured table with problem links and notes. I will update this rep
 | 4 | [House Robber](https://leetcode.com/problems/house-robber) | subproblem: find max of each subarray for an element of the array, keep prev_1 or keep prev_2 and add self to avoid adjacent values |
 | 5 | [House Robber 2](https://leetcode.com/problems/house-robber-ii/description/) | run dp for two instances: 1. if first element taken, slice out last element, 2. if second element taken iterate until last element |
 | 6 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | 2P: two pointers: treat each character as a center and expand outwards, with odd and even approaches ,  DP O(n^2) time and O(n^2) space: start from the end, keep 2d array updated for left,right, update result if palindrome and >max |
-| 7 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/) | Dynamic Programming: O(n^2) => substring is palindrome if substring i+1, j-1 is palindrome, Iterative 2P: O(n^2) => expand around center to count odd and even length palindromes | 
+| 7 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/) | Dynamic Programming: O(n^2) => substring is palindrome if substring i+1, j-1 is palindrome,
+ Iterative 2P: O(n^2) => expand around center to count odd and even length palindromes | 
+| 8 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | TD: build decision tree, if end reached return 1 else 0, accumulate the counts, BU: one char: i= sum of i-1, two char: sum of i-2 since you take two characters, accumulate on no of ways from two characters back |
