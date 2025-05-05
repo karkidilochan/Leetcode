@@ -90,6 +90,7 @@ Below is a structured table with problem links and notes. I will update this rep
 | 7| [Flood Fill](https://leetcode.com/problems/flood-fill/description/) | bfs/dfs the graph, check for original color after popping queue, since node in queue may be already changed |
 | 8 | [01-Matrix](https://leetcode.com/problems/01-matrix/) | bfs: start from 0-cell append them to queue, after traversing the matrix, start processing the queue, traverse new cells if their results cell hasn't been computed yet, DP approach: do a two pass from top-left, and then bottom-right |
 | 9 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | we are excluding edges from modification, so start search from edges, and populate with something else then another loop to capture the rest, turn populated ones to the original value |
+| 10 | [Course Schedule](https://leetcode.com/problems/course-schedule/description/) | detect cycle with dfs for each node, build adjacency list using the prerequisites list, memoize for nodes by emptying prereqs for nodes that return True |
 
 ### **🌀 Backtracking**  
 | # | Problem | Notes |
@@ -116,3 +117,11 @@ Below is a structured table with problem links and notes. I will update this rep
 | 7 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/) | Dynamic Programming: O(n^2) => substring is palindrome if substring i+1, j-1 is palindrome,
  Iterative 2P: O(n^2) => expand around center to count odd and even length palindromes | 
 | 8 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | TD: build decision tree, if end reached return 1 else 0, accumulate the counts, BU: one char: i= sum of i-1, two char: sum of i-2 since you take two characters, accumulate on no of ways from two characters back |
+| 9 | [Coin Change](https://leetcode.com/problems/coin-change/description/) | TD approach:
+recursion will return the number of coins used at each step, return 0 when target met,
+add 1 to each return at the seceding step
+if the main function returns float("inf"), return -1
+BU approach:
+create a table for all amounts from 0 to target
+for each amount, loop through all coins, for each coin, find the no of coins needed minus the amount and add one coin
+ |
