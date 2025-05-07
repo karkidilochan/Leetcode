@@ -31,6 +31,7 @@ Below is a structured table with problem links and notes. I will update this rep
 | 5 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | keep count of each character and use O(1) lookup |
 | 6 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | condition to merge intervals: start<=last_end and end>=last_start,
 sort the intervals to get a sequence of ascending intervals |
+| 7 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | use hashmap to keep track of count and update list by looping through it for each count |
 
 ### **🎯 Two Pointers**  
 | # | Problem | Notes |
