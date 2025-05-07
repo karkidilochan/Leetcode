@@ -29,6 +29,8 @@ Below is a structured table with problem links and notes. I will update this rep
 | 3 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | linear search: find insertion point, fix ranges with min(start) and max(end), binary search: find insertion point, append to result array while fixing the range with max(end) |
 | 4 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | optimized approach: two passes, first pass find prefix product shifted to right by one, suffix product shifted to right by one | 
 | 5 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | keep count of each character and use O(1) lookup |
+| 6 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | condition to merge intervals: start<=last_end and end>=last_start,
+sort the intervals to get a sequence of ascending intervals |
 
 ### **🎯 Two Pointers**  
 | # | Problem | Notes |
@@ -98,6 +100,9 @@ Below is a structured table with problem links and notes. I will update this rep
 | 1 | [Subsets](https://leetcode.com/problems/subsets) | for each element, either include it in subset or not, gives series of actions for 2^n subsets for n elements; backtracking: popping recently added element |
 | 2 | [Combination Sum](https://leetcode.com/problems/combination-sum/description/) | build a decision tree out of the possible actions at each element, each action can be a recursion to i+1 element with append and after pop |
 | 2 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | build a decision tree out of the possible actions at each element, first sort to avoid repeated runs, and in each recursion after popping, check for duplicates|
+
+| 3 | [Permutations](https://leetcode.com/problems/permutations/) | recurse for each element, keep track of visited element for each recursion level to avoid duplicates, backtrack/pop after returning the dfs
+ |
 
 
 ### ** Bit Manipulation**  
