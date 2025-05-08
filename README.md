@@ -31,7 +31,11 @@ Below is a structured table with problem links and notes. I will update this rep
 | 5 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | keep count of each character and use O(1) lookup |
 | 6 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | condition to merge intervals: start<=last_end and end>=last_start,
 sort the intervals to get a sequence of ascending intervals |
-| 7 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | use hashmap to keep track of count and update list by looping through it for each count |
+| 7 | [Sort Colors](https://leetcode.com/problems/sort-colors/) |naive: use hashmap, in-place solution using dutch national flag algorithm
+O(n) time complexity, O(1) space complexity
+use three pointers: current, zero, and two, iterate until two pointer and swap values |
+| 8 | [Majority Element](https://leetcode.com/problems/majority-element/) | boyer-Moore Voting Algorithm
+the majority element's count remain when subtracted by counts of all other elements |
 
 ### **🎯 Two Pointers**  
 | # | Problem | Notes |
@@ -129,5 +133,6 @@ add 1 to each return at the seceding step
 if the main function returns float("inf"), return -1
 BU approach:
 create a table for all amounts from 0 to target
-for each amount, loop through all coins, for each coin, find the no of coins needed minus the amount and add one coin
- |
+for each amount, loop through all coins, for each coin, find the no of coins needed minus the amount and add one coin |
+| 10 | [Max Subarray](https://leetcode.com/problems/maximum-subarray/) | kadane's algorithm: discard previous sum if it is less than current number
+O(n) time complexity, O(1) space complexity |
