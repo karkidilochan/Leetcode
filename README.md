@@ -36,11 +36,11 @@ O(n) time complexity, O(1) space complexity
 use three pointers: current, zero, and two, iterate until two pointer and swap values |
 | 8 | [Majority Element](https://leetcode.com/problems/majority-element/) | boyer-Moore Voting Algorithm
 the majority element's count remain when subtracted by counts of all other elements |
-
-### **🎯 Two Pointers**  
-| # | Problem | Notes |
-|---|---------|-------|
-
+| 9 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | water at each point is min(leftmax, rightmax) - height
+two passes to find leftmax and rightmax for each point
+for 2p, use left,right pointers to find leftmax and rightmax
+update the smallest of leftmax and rightmax with +1 and find unit by subtracting
+height from the smallest of leftmax and rightmax |
 
 ### **📚 Stack**  
 | # | Problem | Notes |
@@ -106,8 +106,9 @@ the majority element's count remain when subtracted by counts of all other eleme
 | 2 | [Combination Sum](https://leetcode.com/problems/combination-sum/description/) | build a decision tree out of the possible actions at each element, each action can be a recursion to i+1 element with append and after pop |
 | 2 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | build a decision tree out of the possible actions at each element, first sort to avoid repeated runs, and in each recursion after popping, check for duplicates|
 
-| 3 | [Permutations](https://leetcode.com/problems/permutations/) | recurse for each element, keep track of visited element for each recursion level to avoid duplicates, backtrack/pop after returning the dfs
- |
+| 3 | [Permutations](https://leetcode.com/problems/permutations/) | recurse for each element, keep track of visited element for each recursion level to avoid duplicates, backtrack/pop after returning the dfs |
+| 4 | [Subsets II](https://leetcode.com/problems/subsets-ii/) | in the subsets with unique elements problem, just add while loop to skip duplicates
+time: O(n*2^n), space: O(n) |
 
 
 ### ** Bit Manipulation**  
