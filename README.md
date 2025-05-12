@@ -66,7 +66,10 @@ height from the smallest of leftmax and rightmax |
 | 1 | [Copy Linked List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | copy linked list with recursion, create new node before recursive call, use recursive call to assign the copy, and assign random pointer after the recursive call, use hashmap as index old -> new |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | iterate through the lists until both of them are none and carry over is 0, add modulus 10 of sum to the new node |
 | 3 | [Find Duplicate](https://leetcode.com/problems/find-the-duplicate-number/) | treat list as linked list, duplicate number will create a cycle, detect cycle, then find the cycle starting point by resetting on pointer to head, you can use bit set |
-|4 | [Middle of Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/) | slow and fast pointer|
+| 4 | [Middle of Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/) | slow and fast pointer|
+| 5 | [LRU cache](https://leetcode.com/problems/lru-cache/) | keep mru in the tail and lru in the head,
+keep dummy head and tail to avoid edge cases
+if key exits, remove the node and add new node to the tail |
 
 ### **🌳 Trees**  
 | # | Problem | Notes |
@@ -137,3 +140,5 @@ create a table for all amounts from 0 to target
 for each amount, loop through all coins, for each coin, find the no of coins needed minus the amount and add one coin |
 | 10 | [Max Subarray](https://leetcode.com/problems/maximum-subarray/) | kadane's algorithm: discard previous sum if it is less than current number
 O(n) time complexity, O(1) space complexity |
+| 11 | [Max Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | keep track of negative numbers as well, record the max and min at each iteration,
+update max_product with max of max_product, min product and max at each iteration |
