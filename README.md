@@ -101,6 +101,8 @@ if key exits, remove the node and add new node to the tail |
 | 8 | [01-Matrix](https://leetcode.com/problems/01-matrix/) | bfs: start from 0-cell append them to queue, after traversing the matrix, start processing the queue, traverse new cells if their results cell hasn't been computed yet, DP approach: do a two pass from top-left, and then bottom-right |
 | 9 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | we are excluding edges from modification, so start search from edges, and populate with something else then another loop to capture the rest, turn populated ones to the original value |
 | 10 | [Course Schedule](https://leetcode.com/problems/course-schedule/description/) | detect cycle with dfs for each node, build adjacency list using the prerequisites list, memoize for nodes by emptying prereqs for nodes that return True |
+| 11 | [Accounts Merge](https://leetcode.com/problems/accounts-merge/) | build an adjacency list from the given accounts, each email is a node
+dfs traversal through each email to find al connected emails, treat the path as emails of a single person |
 
 ### **🌀 Backtracking**  
 | # | Problem | Notes |
@@ -112,6 +114,11 @@ if key exits, remove the node and add new node to the tail |
 | 3 | [Permutations](https://leetcode.com/problems/permutations/) | recurse for each element, keep track of visited element for each recursion level to avoid duplicates, backtrack/pop after returning the dfs |
 | 4 | [Subsets II](https://leetcode.com/problems/subsets-ii/) | in the subsets with unique elements problem, just add while loop to skip duplicates
 time: O(n*2^n), space: O(n) |
+| 5 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Don't get anxious about stacks, think of them as a data structure to look backwards
+keep a count of open and close parentheses,
+if open remains, add open and recurse,
+backtrack and check if close can be added; close<open
+if open == close == n, add to result |
 
 
 ### ** Bit Manipulation**  
@@ -142,3 +149,7 @@ for each amount, loop through all coins, for each coin, find the no of coins nee
 O(n) time complexity, O(1) space complexity |
 | 11 | [Max Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | keep track of negative numbers as well, record the max and min at each iteration,
 update max_product with max of max_product, min product and max at each iteration |
+| 12 | [Word Break](https://leetcode.com/problems/word-break/) | start from first character, word break valid only if starting with first,
+loop through slices of string, if slice in word dict, recurse from that index
+if end reached, return true
+memoize the results for quick lookup |

@@ -1,3 +1,9 @@
+"""
+build an adjacency list from the given accounts, each email is a node
+dfs traversal through each email to find al connected emails, treat the path as emails of a single person
+"""
+
+
 class Solution:
     def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
         from collections import defaultdict
