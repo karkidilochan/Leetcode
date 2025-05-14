@@ -119,6 +119,10 @@ keep a count of open and close parentheses,
 if open remains, add open and recurse,
 backtrack and check if close can be added; close<open
 if open == close == n, add to result |
+| 6 | [Word Search](https://leetcode.com/problems/word-search/) | go through each cell, compare the letter with the each subsequent letter in the word,
+if match, look in the other directions, with a visited set to avoid going back
+increment index of word while recursing,
+remember: mutable objects are passed by reference, so remove the cell from visited set when backtracking |
 
 
 ### ** Bit Manipulation**  
