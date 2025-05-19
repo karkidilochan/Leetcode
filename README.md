@@ -41,6 +41,11 @@ two passes to find leftmax and rightmax for each point
 for 2p, use left,right pointers to find leftmax and rightmax
 update the smallest of leftmax and rightmax with +1 and find unit by subtracting
 height from the smallest of leftmax and rightmax |
+| 10 | [Car Fleet](https://leetcode.com/problems/car-fleet/) | need to look at cars from descending order of position,
+faster cars with lesser time catch up to slower cars with greater time
+in descending order, if time of car greater than the car in front of it, increase fleet count
+can use stack to keep track of the time of the car in front of it
+O(n) time complexity, O(n) space complexity |
 
 ### **📚 Stack**  
 | # | Problem | Notes |
