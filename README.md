@@ -46,6 +46,7 @@ faster cars with lesser time catch up to slower cars with greater time
 in descending order, if time of car greater than the car in front of it, increase fleet count
 can use stack to keep track of the time of the car in front of it
 O(n) time complexity, O(n) space complexity |
+| 11 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | find the odd count, subtract it, add one before returning |
 
 ### **📚 Stack**  
 | # | Problem | Notes |
