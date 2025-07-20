@@ -129,6 +129,7 @@ if open == close == n, add to result |
 if match, look in the other directions, with a visited set to avoid going back
 increment index of word while recursing,
 remember: mutable objects are passed by reference, so remove the cell from visited set when backtracking |
+| 7 | [Letter Combinations of Phone] (https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | runtime: 4^n, space: O(n) take each phone number, create a path from its letter, backtrack for each succeeding digit |
 
 
 ### ** Bit Manipulation**  
