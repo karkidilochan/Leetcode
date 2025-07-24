@@ -47,6 +47,7 @@ in descending order, if time of car greater than the car in front of it, increas
 can use stack to keep track of the time of the car in front of it
 O(n) time complexity, O(n) space complexity |
 | 11 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | find the odd count, subtract it, add one before returning |
+| 12 | [Find all anagrams] (https://leetcode.com/problems/find-all-anagrams-in-a-string/) | get character count of p first, can use an array of 26, then slide a window of length of p over s, and update the counts of character, remove character counts if length exceeds that of p |
 
 ### **📚 Stack**  
 | # | Problem | Notes |
